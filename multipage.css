@@ -1,0 +1,280 @@
+.outer{
+  display:grid;
+     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  row-gap: 20px;
+  column-gap: 18px;
+  max-width: 1280px;
+  position:relative;
+  top:65px;
+  justify-items: center;
+
+}
+.pic{
+  max-width:130px;
+  height: 190px;
+ 
+  object-fit: cover;
+  transition: opacity 0.15s;
+}
+.pic:hover{
+box-shadow: 0 0 5px rgba(0,0,0,0.9);  
+}
+.book, .book-content{
+  max-width: 100%;
+  box-sizing: border-box;
+
+}
+.book-content{
+  cursor: pointer;
+  display:flex;
+  flex-direction: row;
+   
+}
+.series-record p{
+  display:inline;
+
+}
+.title{
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.subject{
+  font-size: 14px;
+  color: gray;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.author{
+  font-size:16px;
+  margin-bottom: 2px;
+}
+.series{
+  font-weight: 700;
+  font-size: 16px;
+}
+.type{
+  font-size: 16px;
+}
+.sales-record{
+  margin-bottom: 10px;
+}
+.sales-record p{
+  display: inline;
+  font-size: 16px;
+  color: red;
+  
+}
+.series-record{
+  margin-bottom: 10px;
+}
+.paperback{
+  font-weight:700;
+  font-size: 16px;
+}
+.publish-date{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.availability{
+color: green;
+font-weight: 900;
+font-size: 20px;
+}
+.price{
+  font-weight: 900;
+font-size: 20px;
+margin-bottom: 30px;
+}
+
+.quantity{
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  justify-content: space-between;
+  flex-direction: row;
+  border:1px solid rgb(217, 214, 214);
+  height: 35px;
+  width: 100px;
+  background-color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.plus-sign,.minus-sign{
+  position: relative;
+  color: gray;
+  font-size: 22px;
+  opacity: 0.3;
+  font-weight: 300;
+
+ }
+
+
+.add{
+  background-color: black;
+  color: white;
+  height: 35px;
+  width: 100px;
+  font-size: 18px;
+  padding:5px ;
+  border: none;
+  transition:border 0.15s;
+  cursor: pointer;
+ 
+}
+.buttoon{
+  z-index: 100;
+  display:flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.demand{
+  width:60px
+}
+.book{
+  height: 500px;
+  padding: 20px;
+  transition:background-color 3s ;
+}
+.book:hover{
+  background-color: rgb(245, 241, 241);
+}
+.details{
+  display:block;/* inline-block can cause overflow; use block */
+max-width: 100%; /*limit to parent width */
+  border-bottom: 1px solid rgba(170, 167, 167,0.2);
+  overflow-wrap: break-word; /* Ensures long words or URLs break to the next line instead of overflowing their container */
+}
+.for-border-padding{
+  padding-left: 10px;
+  box-sizing: border-box;
+  min-width: 0; /*min-width: 0 is critical. Without it, flex items won’t shrink past their content width, causing overflow.flex: 1 lets it take the remaining space but still respect the grid column.*/
+  flex:1;
+  
+}
+.add:hover{
+  border: 1px solid orange;
+  }
+
+
+.num{
+  flex:2fr;
+}
+.toolkit1,.toolkit2{
+position: absolute;
+border: 2px solid black;
+height: 100%;
+aspect-ratio: 1/1.5;;
+opacity:0;
+cursor:pointer;
+
+}
+.toolkit1{
+  left:0;
+}
+.toolkit2{
+  right:0;
+}
+.toolkit1:hover,.toolkit2:hover{
+  opacity:1;
+}
+.last-section p{
+  
+  display:inline;
+  color: rgb(51, 50, 50);
+  transition: color 0.15s;
+  overflow-wrap: normal;
+}
+
+.gift{
+  font-size: 17px;
+}
+
+.fav{
+font-size: 13px;
+margin-right:20px ;
+
+}
+.register{
+ font-size:12px ; 
+}
+.last-section{
+  padding-top: 14px;
+  padding-left: 15px;
+}
+.add-to-fav:hover,.registry:hover{
+ color:rgba(202, 85, 39,0.9);
+}
+.present{
+  font-size: 12px;
+}
+.last-section div{
+  display: inline-block;
+}
+.availability-book2{
+color: rgb(211, 84, 37);
+font-weight: 900;
+font-size: 20px;
+}
+.amount{
+  font-family: arial;
+  color:gray;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.free-availability{
+  
+color: green;
+font-weight: 900;
+font-size: 20px;
+margin-bottom: 30px;
+}
+.free-series-record p{
+ display:inline;
+}
+.free-series{
+  font-size: 16px;
+}
+.free-series-record{
+  margin-top: 12px;
+}
+.free-paperback{
+ font-weight:700;
+  font-size: 16px;
+  margin-top: 12px;
+ }
+ .free-pic{
+  max-width: 140px;
+  height: 200px;
+  object-fit: cover;
+  transition: opacity 0.15s;
+ 
+ }
+ .free-pic:hover{
+
+box-shadow: 0 0 5px rgba(0,0,0,0.9);
+}
+
+.subject {
+max-width: 100%;
+width:auto; /* remove fixed 300px width */
+
+}
+.free-title{
+font-weight: 700;
+font-size: 16px;
+margin-bottom: 2px;
+}
+
+.link{
+  text-decoration: none;
+  color:inherit;/*gains the normal color of text*/
+}
+.log-link{
+  background-color: inset;
+  text-decoration: none;
+}
+

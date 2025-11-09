@@ -1,0 +1,111 @@
+.outer{
+  display:grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 100%;
+}
+html,body{
+  height: 100vh;
+  width: 100%;
+  font-family: Roboto,Arial;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.elibrary{
+  height: 160px;
+  width:180px ;
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+.middle{
+display:flex;
+flex-direction: column;
+align-items: center;
+margin-top: 120px;
+}
+input{
+border-radius: 6px;
+border:1px solid gray;
+height: 35px;
+margin-bottom: 10px;
+width: 500px;
+}
+.search::placeholder{
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.btn{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  height: 40px;
+  border-radius: 20px;
+  width:510px;
+  font-size: 18px;
+  background-color: rgb(5, 77, 184);
+  border:none;
+  color:white;
+  cursor:pointer;
+}
+.memory{
+  margin-top:30px;
+}
+.btn-create{
+  margin-top: 60px;
+  height: 40px;
+  border-radius: 20px;
+  width:510px;
+  font-size: 18px;
+  color:rgb(27, 108, 222);
+  background-color:white;
+  border:1px solid rgb(27, 108, 222);
+  cursor: pointer;
+  position: relative;
+ }
+.btn:active,.btn-create:active{
+  opacity:0.5;
+}
+.top{
+  margin-top: -100px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: rgb(223, 104, 132);
+ font-weight: 500;
+}
+p{
+  margin: 0;
+}
+.first{
+  color: lightseagreen;
+  margin-left: 80px;
+  margin-bottom: 5px;
+}
+.toolkit{
+height: 25px;  
+position:absolute;
+pointer-events: none;
+right:0;
+left: 40px;
+
+width:400px;
+background-color: gray;
+border-radius: 8px;
+color: rgb(236, 235, 235);
+opacity:0;
+padding-top: 3px;
+bottom: -40px;
+}
+.btn-create:hover .toolkit{
+position:absolute;
+right:0;
+left: 100px;
+bottom: -40px;
+width:320px;
+background-color: rgb(201, 195, 195);
+border-radius: 8px;
+color: rgb(255, 255, 255);
+opacity:1;
+}
+.second{
+  font-size: 22px;
+}

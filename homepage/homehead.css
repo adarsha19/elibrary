@@ -1,0 +1,303 @@
+.outer{
+  display: flex;
+ flex-direction:column;
+ height: 88.9vh;
+ position: relative;
+ right:0;
+ left:0;
+ bottom:0;
+ top:65px;
+ background-color: black;
+ position: relative;
+ box-sizing:border-box
+}
+.photo{
+  position: relative;
+ height: 73vh;
+ width:100%;
+ box-sizing: border-box;
+
+ 
+}
+
+
+.bottom-bar{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  width:100%;
+  background-color: white;
+  flex:1;
+  position:relative;
+  z-index:1000;
+  bottom:0;
+  }
+  html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.book-logo{
+  flex:1;
+  width: 100%;
+ 
+  z-index: 1000;
+}
+
+.first-column{
+  display: flex;
+  flex-direction: column;
+  background-color:blue;
+  align-items: center;
+  flex: 1;
+  opacity:0.7;
+height: 100%; 
+}
+.book{
+  height:71px;
+  flex:1;
+  width:100%;
+  object-fit: cover;
+opacity:0.6;
+
+}
+p{
+  margin: 0;
+}
+.identity{
+  font-size: 16px;
+  opacity:0.6;
+  color: white;
+  padding-right: 25px;
+}
+.second-column{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex:1;
+  background-color: lightblue;
+  opacity:0.7;
+}
+.third-column{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex:1;
+  background-color: red;
+  opacity:0.7;
+}
+.fourth-column{
+display: flex;
+flex-direction: column;
+ background-color: yellow;
+flex:1;
+height: 100%;
+opacity:0.7;
+}
+.fifth-column{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  height: 100%;
+  background-color: orange;
+  opacity:0.7;
+  
+}
+.sixth-column{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: aqua;
+  flex:1;
+  opacity:0.7;
+}
+.seventh-column{
+display: flex;
+flex-direction: column;
+height: 100%;
+background-color: rgba(219, 67, 108, 0.893);
+flex:1;
+opacity:0.7;
+
+}
+.first-column:hover,.second-column:hover,.third-column:hover,.fourth-column:hover,.fifth-column:hover,.sixth-column:hover,.seventh-column:hover{
+opacity:1;
+
+
+}
+.first-column,.second-column,.third-column,.fourth-column,.fifth-column,.sixth-column,.seventh-column{
+  position: relative;
+  cursor:pointer;
+  transition: opacity 0.15s;
+  align-items: center;
+}
+.dvd-identity{
+  opacity:0.9;
+}
+.identity{
+  opacity: 0.9;
+}
+.overtxt{
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  pointer-events: none;
+
+}
+.overlap1{
+  color: rgb(52, 139, 210);
+  font-size: 35px;
+}
+.overlap2{
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: 25px;
+color: white;
+}
+@media(max-width:1100px){
+.overlap2,.txt2{
+  font-size: 22px;
+
+}
+.overlap1{
+  font-size: 24px;
+}
+}
+@media(max-width:900px){
+.overlap2,.txt2{
+  font-size: 21px;
+
+}
+.overlap1{
+  font-size: 19px;
+}
+}
+@media(max-width:815.5px){
+.overlap2,.txt2{
+  font-size: 16px;
+
+}
+.overlap1{
+  font-size: 18px;
+}
+}
+@media(max-width:700px){
+.overlap2,.txt2{
+  font-size: 12.5px;
+
+}
+}
+
+
+
+
+
+
+
+/* Hide radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* Move slides based on which radio is checked */
+#slide1:checked ~ .slides {
+  transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+/* Dots navigation at bottom */
+.nav {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#slide1:checked ~ .nav label[for="slide1"],
+#slide2:checked ~ .nav label[for="slide2"],
+#slide3:checked ~ .nav label[for="slide3"] {
+  background: white;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: transform 0.8s ease;
+}
+.slides .mainphoto1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  flex-shrink: 0;
+   object-position:50% 50%;
+}
+.slides .mainphoto2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  flex-shrink: 0;
+   object-position:80% 40%;
+}
+.slides .mainphoto3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  flex-shrink: 0;
+   object-position:90% 44%;
+}
+.bottom-book{
+  text-decoration: none;
+  background-color: inherit;
+  height: 100%;
+ flex: 1;
+}
+.one{
+  position: relative;
+}
+.login:active{
+  margin-top: 5px;
+  margin-right: 28.5px;
+ box-shadow: 0 0 5px rgba(56, 170, 180, 0.9);
+}
+.login:hover{
+  border: 1px solid rgba(67, 199, 219, 0.893);
+}
+.log{
+  background-color: inset;
+  text-decoration: none;
+}
