@@ -125,3 +125,8 @@ html,body{
   padding-top: 65px; /* = header height */
   box-sizing: border-box;
 }
+@media (max-width: 600px) {
+  .outer {
+    padding-top: 100px; /* increases space so bottom bar stays in correct position */
+  }
+}
