@@ -1,7 +1,7 @@
 .outer{
   display: flex;
  flex-direction:column;
- height: 88.9vh;
+ height: 100%;
  position: relative;
  right:0;
  left:0;
@@ -300,4 +300,5 @@ input[type="radio"] {
 .log{
   background-color: inset;
   text-decoration: none;
+
 }
