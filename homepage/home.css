@@ -124,12 +124,15 @@ html,body{
 .outer {
   padding-top: 65px;
   box-sizing: border-box;
+  min-height:100vh;
 }
+
 @media (max-width: 600px) {
   .outer {
     padding-top: 100px; /* increases space so bottom bar stays in correct position */
   }
 }
+
 
 
 
