@@ -28,7 +28,7 @@
   width:100%;
   background-color: white;
   flex:1;
-  position:relative;
+  position:fixed;
   z-index:1000;
   bottom:0;
   }
@@ -302,4 +302,5 @@ input[type="radio"] {
   text-decoration: none;
 
 }
+
 
